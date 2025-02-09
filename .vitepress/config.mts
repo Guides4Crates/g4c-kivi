@@ -5,7 +5,7 @@ export default defineConfig({
     base: '/kivi/',
     title: "KIVI",
     description: "User guide for kivi crate",
-    head: [['link', {rel: 'icon', href: '/KiviSmall.webp'}]],
+    head: [['link', {rel: 'icon', href: '/kivi/KiviSmall.webp'}]],
     themeConfig: {
         logo: '/KiviSmall.webp',
         nav: [
