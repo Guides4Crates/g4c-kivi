@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "KIVI"
-  tagline: "Key-value pairs on separate lines"
+  tagline: "Key-value pair with key and value in separate lines"
   image:
     src: /Kivi.webp
     alt: "KIVI"
