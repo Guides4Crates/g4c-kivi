@@ -1,0 +1,37 @@
+version: '3'
+
+silent: true
+
+tasks:
+
+  clean:
+    desc: Clean built artefacts
+    cmds:
+      - cmd: rm -rf .vitepress/cache
+      - cmd: rm -rf .vitepress/dist
+      - cmd: rm -rf .deployment/app
+
+  build:
+    desc: Build the documentation
+    cmds:
+      - task: clean
+      - cmd: npm run docs:build
+
+  install:
+    desc: Installs all npm modules
+    cmds:
+      - cmd: rm -rf ./node_modules
+      - cmd: rm -rf ./package-lock.json
+      - cmd: npm install
+
+  preview:
+    desc: Preview the documentation
+    cmds:
+      - task: build
+      - cmd: npm run docs:preview
+
+  serve:
+    desc: Start the server locally
+    cmds:
+      - task: clean
+      - cmd: npm run docs:dev
