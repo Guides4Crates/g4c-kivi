@@ -2,7 +2,7 @@ import {defineConfig} from 'vitepress'
 
 export default defineConfig({
     lang: 'en-US',
-    base: '/',
+    base: '/kivi/',
     title: "KIVI",
     description: "User guide for kivi crate",
     head: [['link', {rel: 'icon', href: '/KiviSmall.webp'}]],
